@@ -1,0 +1,46 @@
+body {
+    background-color: #a1d6ee;
+    color: #040404;
+    font-family: Courier, monospace;
+}
+
+h1 {
+    color: #04050a;
+    font-family: Courier, monospace;
+    font-size: 40px;
+}
+
+h2 {
+    background-color: #48c2f3;
+    color: #0d1b97;
+    font-size: 20px;
+    width: 08%;
+    border-radius: 10px;
+}
+
+ul {
+    background-color: #48c2f3;
+    color: #0d1b97;
+    border-radius: 13px;
+    
+    width: 200px;
+}
+
+.job-title {
+    background-color: #48c2f3;
+    color:#0d1b97;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 2.5px;
+    width: 10rem;
+}
+
+#high {
+    background-color: #48c2f3;
+    color: #0d1b97;
+    border-radius: 9px;
+    padding: 1.5px;
+    width: 100px;
+}
+
