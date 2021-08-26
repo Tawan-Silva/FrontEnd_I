@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200;1,300&display=swap');
+
+body {
+    background-color: #8ee9f0;
+}
+
+h1 {
+    color: #020f0f;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #6696c4;
+}
+
+.media-picture {
+    height: 400px;
+    width: 100%;
+    background-image: url(https://i.pinimg.com/originals/bd/a5/be/bda5be61177acdb5fd46c3219f8b81a0.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.review-score {
+    background-color: #6a96be;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
