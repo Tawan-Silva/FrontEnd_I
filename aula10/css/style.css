@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+} 
+
+h1{
+    color:#f71b0b;
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.banner {
+    background-image: url(../imagens/uchiha.png);
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.button1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    background-color: #e20c0c;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.button2 {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    background-color: #e20c0c;
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 1rem;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
