@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 20000px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagens/background.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.main-menu {
+    width: 100%;
+    background: linear-gradient(to right, #5b1af3, #62f5fa, #4936f0bb);
+    position: fixed;
+    top: 0;
+    z-index: 50px;
+}
+
+.main-menu a:last-child {
+    float: right;
+}
+
+.main-menu a {
+    text-decoration: none;
+    padding: 15px ;
+    font-size: 16px;
+    color: #ffffff;
+    display: inline-block;
+}
+
+main.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+    position: absolute;
+}
+
+main.container div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    color: #e7abab;
+    margin: 10px;
+}
+
+
+main.container div.card img {
+    width: 100px;
+    height: 100px;
+}
+
+main.container div.card button {
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #f57be1, #b38df5, #87c1f0);
+    font-size: 100%;
+    font-weight: 400;
+}
+
+main.container a:hover {
+    background: linear-gradient(to right, #f57be1, #b38df5, #87c1f0);
+    color: white;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+#whatsapp {
+    background: url(../imagens/whatsapp.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 0;
+
+}
