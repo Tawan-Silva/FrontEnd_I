@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #7cd2ec;
+}
+
+form {
+    max-width: 650px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+form h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+div {
+    display: inline;
+    font-size: 15px;
+    left: 0;
+    position: relative;
+    margin: 5px;
+}
+
+fieldset legend {
+    text-align: center;
+    padding: 5px;
+    
+}
+
+div input[type="number"] {
+    max-width: 40px;
+   
+}
+
+button {
+    position: absolute;
+    left: calc(50% - 100px / 2);
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    background-color: mediumturquoise;
+    margin-top: 10px;
+}
+
+
+

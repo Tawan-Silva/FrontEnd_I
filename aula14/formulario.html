@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="">
+        <h3>Doces & Salgados</h3>
+
+        <fieldset>
+            <legend>Docinhos</legend>
+            <div class="box">
+                <img src="./img/brigadeiro.jpg" alt="brigadeiro-chocolate">
+                <label for="brigadeiro">Brigadeiro de chocolate</label>
+                <input type="checkbox" name="doce">
+                <input type="number" id="quantidade" name="quantidade" min="1" max="100">
+            </div>
+
+            <div class="box">
+                <img src="./img/bem-casado.jpg" alt="bem-casado">
+                <label for="bemCasado">Bem casado</label>
+                <input type="checkbox" name="doce">
+                <input type="number" id="quantidade" name="quantidade" min="1" max="100">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Coxinhas</legend>
+            <div class="box">
+                <img src="./img/coxinha-frango.jpg" alt="coxinha-de-frango...">
+                <label for="coxinha">Frango</label>
+                <input type="checkbox" name="salgado" id="coxinha">
+                <input type="number" id="quantidade" name="quantidade" min="1" max="100">
+            </div>
+
+            <div class="box">
+                <img src="./img/coxinha-catupiry.jpg" alt="coxinha-catupiry">
+                <label for="coxinha">Frango com Catupiry</label>
+                <input type="checkbox" name="salgado" id="coxinha">
+                <input type="number" id="quantidade" name="quantidade" min="1" max="100">
+            </div>
+        </fieldset>
+
+        <button type="submit">Comprar</button>
+    </form>
+
+</body>
+
+</html>
