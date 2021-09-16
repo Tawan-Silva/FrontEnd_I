@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    background: teal;
+}
+
+div.ghost {
+    width: 100px;
+    height: 100px;
+    background: #ed9b64;
+    border-radius: 60px;
+    transition: 1s;
+}
+
+div.icon {
+    height: 100px;
+    width: 100px;
+    background-image: url(./img/kisspng-emoji-sadness-emoticon-smiley-clip-art-sad-emoji-png-clipart-5a73fc019d1bb8.4272949715175505936435.png);
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+    background: cyan;
+    position: absolute;
+    padding: 30px;
+    left: 50%;
+    top: 50%;
+    border: 0;
+    border-radius: 20px;
+}
+
+
+@keyframes ghost {
+    0% {
+        opacity: 0.1;
+        transform: translateX(200px);
+        box-shadow: -30px -5px -10px  cornflowerblue;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(90vw);
+        box-shadow: -30px -5px 10px cornflowerblue;
+
+    }
+
+}
+
+@keyframes icon {
+    10% {
+        opacity: 1;
+        transform: translateX(1400px) translateY(-100px) rotate(3600deg);
+    }
+
+    20% {
+        transform: rotate(300deg) translateY(600px) translateX(800px);
+    }
+    40% {
+        transform: translateY(200px) translateX(800px) translateY(400px);
+    }
+}
+
+@keyframes button {
+    25% {
+        transform: translateX(-400px) rotate(180deg);
+        background: darkmagenta;
+    }
+    50% {
+        transform: translateY(200px) rotate(360deg);
+        background: red;
+    }
+    75% {
+        transform: translateX(400px) rotate(180deg);
+        background: steelblue;
+    }
+    100%{
+        transform: translateY(-200px) rotate(360deg);
+        background: mediumspringgreen;
+    }
+}
+
+button {
+    animation-name: button;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+
+div.icon {
+    animation-name: icon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+
+div.ghost {
+    animation-name: ghost;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
