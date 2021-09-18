@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body,#root {
+
+    background-color: #9c989883;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* eixo horizontal */
+    align-items: center; /* eixo vertical */
+    gap: 30px;
+}
+
+
+main img {
+    width: 400px;
+    height: 250px;
+    transition: 0.5s;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #00000078;
+    margin: 0 20px;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+
+
+p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+button {
+    position: fixed;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    background-image: url(./img/facebook.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 2px 5px 5px #0000004b;
+    cursor: pointer;
+}
+
+
+@keyframes active {
+    100% {
+        transform: scale(0.9) translateY(-10px);
+    }
+}
+
+button {
+    animation-name: active;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
