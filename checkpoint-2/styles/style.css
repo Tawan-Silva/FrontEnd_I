@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+
+#root {
+    background-image: url(../img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    z-index: 50;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+fieldset.form-container {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 60px #000;
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    transition: 2s;
+
+}
+
+form fieldset span {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+
+.controle label .imp,
+input[type="radio"] {
+    display: inline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+
+}
+
+.controle input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0;
+    opacity: 0.7;
+    transition: .3s ease;
+}
+
+.controle input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="date"]:hover {
+    opacity: 1;
+    background-color: #fbfbfb;
+}
+
+fieldset.editor {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+fieldset.editor legend {
+    text-align: center;
+    padding: 0 5px;
+
+}
+
+fieldset.editor input[type="radio"] {
+    margin-left: 5px;
+
+}
+
+
+fieldset div select {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    transition: .3s ease;
+}
+
+fieldset div select:hover {
+    opacity: 1;
+}
+
+div input[type="submit"],
+input[type="reset"] {
+    width: 110px;
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 0;
+    opacity: .8;
+    transition: opacity .3s ease;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+div input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@keyframes zoo {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+fieldset.form-container {
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-name: zoom;
+}
+
+@media (max-width: 768px) {
+
+    main form {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    fieldset.form-container {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    main form {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    fieldset.form-container {
+        height: 85vh;
+        font-size: 12px;
+    }
+
+
+    form fieldset span {
+        font-size: 20px;
+    }
+
+    .controle input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+        width: 300px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+
+    .controle select {
+        width: 150px;
+        margin-bottom: 7px;
+        margin-top: 7px;
+    }
+
+    fieldset.editor {
+        width: 300px;
+    }
+
+    div input[type="submit"],
+    input[type="reset"] {
+        padding: 7px 5px;
+        font-size: 14px;
+    }
+
+}
